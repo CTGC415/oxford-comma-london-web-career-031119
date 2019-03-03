@@ -3,5 +3,6 @@ def oxford_comma(array)
   if array.empty?
     return "#{last}"
   end
-  array.join(", ").concat(", and #{last}")
+  array.push(" and #{last}")
+  array.join(", ")
 end
